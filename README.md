@@ -37,3 +37,7 @@
 * Bootstrap grid for responsiveness on the comparison page.
 ##### Deploy website to GitHub Pages,  publicly accessible URL
 
+## References
+
+OpenWeatherMap.org Сurrent weather and forecast. Retrieved from [https://openweathermap.org/](https://openweathermap.org/)
+
