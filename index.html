@@ -9,10 +9,10 @@
     <title>Bootstrap Visualization Dashboard</title>
 
     <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
 
     <!-- Our own CSS stylesheet -->
-    <link rel="stylesheet" href="css/styles.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
 
   </head>
 
@@ -31,7 +31,7 @@
               <span class="icon-bar"></span>
             </button>
             <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="#" id="logo">Latitude</a>
+              <a class="navbar-brand" href="index.html" id="logo">Latitude</a>
             </div>
           </div>
 
@@ -47,7 +47,7 @@
                   <li><a href="visualizations/wind.html">Wind Speed</a></li>
                 </ul>
               </li>
-              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="visualizations/comparison.html">Comparison</a></li>
               <li><a href="visualizations/data.html">Data</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -57,6 +57,46 @@
     <!-- End of navbar -->
 
     <!-- Start of container -->
+    <div class="container">
+      <section class ="row">
+        <div class = "col-md-8">
+          <article class="description-content">
+            <h1 class =" description-header"> Summary: Latitude vs. X</h1>
+            <hr class = "description-hr"/>
+            <img src = "assets/images/city_latitude_vs_temp.png" title = "Latitude vs. Max Temp" alt = "" id = "description-image"/>
+            <p>The purpose of this project was to analyze the weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherAPI to assemble as dataset over 500 cities.</p>
+            <p> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed and humdity. This site provides the source data and visualizations created as a part of the analysis, as well as explainations and descriptions of any trends and correlations witnessed.</p>
+          </article>
+        </div>
+        <div class = "col-md-4">
+          <section id = "imageNav-area">
+            <div class="imageNav-content">
+              <h2 class="imageNav-header"> Visualizations </h2>
+              <hr>
+              <div id="images">
+                <a href="visualizations/temp.html">
+                  <img src = "assets/images/city_latitude_vs_temp.png" title = "Latitude vs. Max Temp" alt = "" class = "imageNav-photo"/>
+                </a>
+           
+                <a href="visualizations/humidity.html">
+                  <img src = "assets/images/city_latitude_vs_humidity.png" title = "Latitude vs. Humidity" alt = "" class = "imageNav-photo"/>
+                </a>
+                <a href="visualizations/cloudiness.html">
+                  <img src = "assets/images/city_latitude_vs_cloudiness.png" title = "Latitude vs. Cloudiness" alt = "" class = "imageNav-photo"/>
+                </a>
+                <a href="visualizations/wind.html">                  
+                  <img src = "assets/images/city_latitude_vs_windspeed.png" title = "Latitude vs Wind Speed" alt = "" class = "imageNav-photo"/>
+                </a>
+              </div>
+            </div>
+
+          </section>
+
+        </div>
+        
+
+      </section>
+    </div>
    
     <!-- End of container -->
 

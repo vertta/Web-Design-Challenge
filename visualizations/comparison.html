@@ -9,10 +9,10 @@
     <title>Bootstrap Visualization Dashboard</title>
 
     <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
 
     <!-- Our own CSS stylesheet -->
-    <link rel="stylesheet" href="css/styles.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
 
   </head>
 
@@ -31,7 +31,7 @@
               <span class="icon-bar"></span>
             </button>
             <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="#" id="logo">Latitude</a>
+              <a class="navbar-brand" href="../index.html" id="logo">Latitude</a>
             </div>
           </div>
 
@@ -57,6 +57,46 @@
     <!-- End of navbar -->
 
     <!-- Start of container -->
+    <div class="container">
+      <article class="description-content row"> 
+        <div class="class-xs-12">
+          <h1 class = "description-header"> Comparison: Latitude vs X </h1>
+          <hr class="description-hr"/>
+          <p class="desciption-text"> Click any plot to get an in-depth analysis.</p>  
+        </div>
+        <div class="col-md-6">
+          <h2 class="comparison-header"> vs. Max Temperature</h2>
+          <a href="temp.html">
+            <img src = "../assets/images/city_latitude_vs_temp.png" title = "Latitude vs. Max Temp" alt = "" class = "comparison-image img-responsive"/>
+          </a>
+          <hr class = "visible-xs visible-sm">
+
+        </div>
+        <div class ="col-md-6">
+          <h2 class="comparison-header"> vs. Humidity</h2>
+          <a href="humidity.html">
+            <img src = "../assets/images/city_latitude_vs_humidity.png" title = "Latitude vs. Humidity" alt = "" class = "comparison-image img-responsive"/>
+          </a>
+          <hr class = "visible-xs visible-sm">
+        </div>
+        <div class ="col-md-6">
+          <h2 class="comparison-header"> vs. Cloudiness </h2>
+          <a href="cloudiness.html">
+            <img src = "../assets/images/city_latitude_vs_cloudiness.png" title = "Latitude vs. Cloudiness" alt = "" class = "comparison-image img-responsive"/>
+          </a>
+          <hr class = "visible-xs visible-sm">
+        </div>
+        <div class ="col-md-6">
+          <h2 class="comparison-header"> vs. Wind Speed </h2>
+          <a href="wind.html">
+            <img src = "../assets/images/city_latitude_vs_windspeed.png" title = "Latitude vs. Wind Speed" alt = "" class = "comparison-image img-responsive"/>
+          </a>
+          <hr class = "visible-xs visible-sm">
+        </div>
+
+      </article>
+
+    </div>
    
     <!-- End of container -->
 

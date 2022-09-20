@@ -9,10 +9,10 @@
     <title>Bootstrap Visualization Dashboard</title>
 
     <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
 
     <!-- Our own CSS stylesheet -->
-    <link rel="stylesheet" href="css/styles.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
 
   </head>
 
@@ -31,7 +31,7 @@
               <span class="icon-bar"></span>
             </button>
             <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="#" id="logo">Latitude</a>
+              <a class="navbar-brand" href="../index.html" id="logo">Latitude</a>
             </div>
           </div>
 
@@ -57,7 +57,42 @@
     <!-- End of navbar -->
 
     <!-- Start of container -->
-    
+    <div class="container">
+      <section class ="row">
+        <div class = "col-md-8">
+          <article class="description-content">
+            <h1 class =" description-header"> Max Tempature</h1>
+            <hr class = "description-hr"/>
+            <img src="../assets/images/city_latitude_vs_temp.png" title ="Latitude vs Temperature" class="img-responsive"/>
+            <p>As expected, the weather becomes significantly warmer as one approches the equator (0 deg. Latitude). More interestingly, however, is the fact that that the sourthern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of year this data was gathered.</p>
+          </article>
+        </div>
+        <div class = "col-md-4">
+          <section id = "imageNav-area">
+            <div class="imageNav-content">
+              <h2 class="imageNav-header"> Visualizations </h2>
+              <hr>
+              <div id="images">
+                <a href="temp.html">
+                  <img src = "../assets/images/city_latitude_vs_temp.png" title = "Latitude vs. Max Temp" alt = "" class = "imageNav-photo active"/>
+                </a>
+           
+                <a href="humidity.html">
+                  <img src = "../assets/images/city_latitude_vs_humidity.png" title = "Latitude vs. Humidity" alt = "" class = "imageNav-photo"/>
+                </a>
+                <a href="cloudiness.html">
+                  <img src = "../assets/images/city_latitude_vs_cloudiness.png" title = "Latitude vs. Cloudiness" alt = "" class = "imageNav-photo"/>
+                </a>
+                <a href="wind.html">                  
+                  <img src = "../assets/images/city_latitude_vs_windspeed.png" title = "Latitude vs Wind Speed" alt = "" class = "imageNav-photo"/>
+                </a>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </section>
+    </div>
     <!-- End of container -->
 
     <!-- Start of footer -->
